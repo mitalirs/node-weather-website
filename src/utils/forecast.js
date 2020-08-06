@@ -13,7 +13,7 @@ const forecast = (long, lat, callback) => {
         }
         else {
             //console.log(body.daily.data[0])
-            callback(undefined , body.daily.data[0].summary +` It is currently ${body.currently.temperature} degrees out. The high today is ${(body.daily.data[0].temperatureHigh)} with a low of ${(body.daily.data[0].temperatureHigh)}. There is a ${(body.currently.precipProbability)*100}% chance of rain. The `)
+            callback(undefined , body.daily.data[0].summary +` It is currently ${body.currently.temperature} degrees out. The high today is ${(body.daily.data[0].temperatureHigh)} with a low of ${(body.daily.data[0].temperatureHigh)}. There is a ${(body.currently.precipProbability)*100}% chance of rain.`)
         }
     })
 }
